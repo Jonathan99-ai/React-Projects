@@ -1,11 +1,18 @@
 {
-  "name": "React con midudev",
+  "name": "react-con-midudev",
+  "private":"true",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json"
+  },
+  "workspaces": [
+    "projects/*"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",

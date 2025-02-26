@@ -16,7 +16,7 @@ function App() {
 
   const [turn, setTurn] = useState(() => {
     const turnFromStorage = window.localStorage.getItem('turn')
-    return turnFromStorage ?? TURNS.X
+    return turnFromStorage ?? TURNS.X 
   })
   //null es que no hay ganador, false es que hay un empate
   const [winner, setWinner] = useState(null)
@@ -59,8 +59,8 @@ function App() {
       <button onClick={resetGame}>Reset del juego</button>
       <section className='game'>
         {
-          board.map((_, index) => {
-            return(
+          board.map((_, index) => 
+            (
               <Square
                 key={index}
                 index={index}
@@ -69,7 +69,7 @@ function App() {
                   {board[index]}
                 </Square>
             )
-          })
+          )
         }
       </section>
 
