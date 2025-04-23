@@ -3,10 +3,8 @@ import react from '@vitejs/plugin-react-swc'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
-  build: {
-    rollupOptions: {
-      external: ['react', 'react-dom', 'react/jsx-runtime', 'react-dom/client'], // Explicitly externalize the module
-    },
+  plugins: [react({
+      jsxRuntime: 'automatic', // Ensure automatic JSX runtime is enabled
+    })],
   },
-})
+)
