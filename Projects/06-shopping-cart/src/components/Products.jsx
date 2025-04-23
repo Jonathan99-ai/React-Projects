@@ -1,6 +1,6 @@
 import { useCart } from '../hooks/useCart'
 import './Products.css'
-import { AddToCartIcon, RemoveFromCartIcon } from './icons'
+import { AddToCartIcon, RemoveFromCartIcon } from './Icons.jsx'
 
 export function Products({ products }) {
     const { addToCart, removeFromCart, cart } = useCart()
